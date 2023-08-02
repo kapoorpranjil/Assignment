@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentoHub - Your Hiring Solution</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://example.com/logo.png" alt="TalentoHub Logo"> 
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section Button -->
+        <div class="cta-button">
+            <a href="#start-hiring" class="button">Start Hiring Now</a>
+        </div>
+    </header>
+    <!-- Rest of the content goes here -->
+     <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Talent Potential</h1>
+            <p>Find the Best Talent for Your Company with TalentoHub's Cutting-edge Recruitment Platform</p>
+            <a href="#start-hiring" class="button">Start Hiring Now</a>
+        </div>
+    </section>
+    
+    <section class="home">
+        <div class="home-content">
+            <h2>Why Choose TalentoHub?</h2>
+            <p>TalentoHub is a leading recruitment platform that connects companies with top talent across various industries. Here's why our platform is the best choice for your hiring needs:</p>
+            <ul>
+                <li>Access to a Diverse Talent Pool: Our extensive network ensures access to a diverse pool of skilled professionals.</li>
+                <li>Advanced Matching Algorithm: Our sophisticated matching algorithm finds the best candidates based on your requirements.</li>
+                <li>Seamless Recruitment Process: We provide a seamless and efficient recruitment process to save your time and resources.</li>
+                <li>Expert Support Team: Our dedicated support team is available to assist you throughout the hiring process.</li>
+            </ul>
+        </div>
+    </section>
+
+      <!-- About Us Section -->
+      <section class="about-us" id="about">
+        <div class="about-us-content">
+            <h2>Our Mission</h2>
+            <p>At TalentoHub, our mission is to bridge the gap between exceptional talent and innovative companies. We aim to create meaningful connections that empower businesses to achieve their goals and individuals to pursue their dream careers.</p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Extensive Talent Network: We have a vast network of highly skilled professionals ready to make a difference in your organization.</li>
+                <li>Advanced Technology: Our platform utilizes advanced matching algorithms to find the best fit for your hiring needs.</li>
+                <li>Personalized Support: Our dedicated team provides personalized assistance throughout the recruitment process.</li>
+                <li>Streamlined Hiring Process: We make hiring easy and efficient, saving you valuable time and resources.</li>
+            </ul>
+
+            <h2>Our Vision</h2>
+            <p>Our vision is to be the go-to platform for companies seeking top talent and for talented individuals seeking exciting career opportunities. We strive to be the driving force behind successful collaborations that shape the future of industries.</p>
+        </div>
+    </section>
+
+
+</body>
+<!-- <script src="script.js" ></script> -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+
+  // Toggle mobile menu on button click
+  mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const ctaButton = document.querySelector('.hero .button');
+
+  // Smooth scroll to the section when CTA button is clicked
+  ctaButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    const sectionToScroll = document.querySelector('#start-hiring'); // Replace with the actual ID of the target section
+    const sectionOffset = sectionToScroll.offsetTop;
+
+    window.scrollTo({
+      top: sectionOffset,
+      behavior: 'smooth'
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        // Smooth scroll to the section when navigation links are clicked
+        navLinks.forEach(link => {
+          link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSection = document.querySelector(link.getAttribute('href'));
+            const sectionOffset = targetSection.offsetTop;
+
+            window.scrollTo({
+              top: sectionOffset,
+              behavior: 'smooth'
+            });
+          });
+        });
+      });
+</script>
+</html>

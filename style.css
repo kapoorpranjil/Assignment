@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Styling the CTA Button */
+  .cta-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button .button:hover {
+    background-color: #0056b3; /* Change the hover background color as needed */
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #007bff; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .hero .button {
+    padding: 15px 30px;
+    background-color: #fff; /* Change the background color as needed */
+    color: #007bff; /* Change the text color as needed */
+    border: 2px solid #fff; /* Change the border color as needed */
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .hero .button:hover {
+    background-color: #0056b3; /* Change the hover background color as needed */
+    color: #fff; /* Change the hover text color as needed */
+  }
+  .home{
+    background-image: linear-gradient(120deg, #FFA500, #FFFF00);
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .home p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .home ul {
+    list-style: disc;
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  .home li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .about-us {
+    background-color: #f9f9f9; /* Change the background color as needed */
+    padding: 80px 0;
+    color: #333; /* Change the text color as needed */
+  }
+  
+  .about-us-content {
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .about-us ul {
+    list-style: disc;
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  .about-us li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
